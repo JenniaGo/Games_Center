@@ -1,0 +1,84 @@
+/project
+|
++-- /app
+|   |
+|   +-- /games
+|   |   |
+|   |   +-- /guessgame
+|   |   |   |
+|   |   |   +-- __init__.py
+|   |   |   +-- views.py
+|   |   |   +-- models.py
+|   |   |   +-- urls.py
+|   |   |   +-- templates/
+|   |   |       |
+|   |   |       +-- guessgame.html
+|   |   |
+|   |   +-- /memorygame
+|   |   |   |
+|   |   |   +-- __init__.py
+|   |   |   +-- views.py
+|   |   |   +-- models.py
+|   |   |   +-- urls.py
+|   |   |   +-- templates/
+|   |   |       |
+|   |   |       +-- memorygame.html
+|   |   |
+|   |   +-- __init__.py
+|   |   +-- urls.py
+|   |   +-- views.py
+|   |   +-- models.py
+|   |
+|   +-- /scores
+|   |   |
+|   |   +-- __init__.py
+|   |   +-- views.py
+|   |   +-- models.py
+|   |   +-- urls.py
+|   |   +-- Score.py
+|   |   +-- database.py
+|   |
+|   +-- /static
+|   |   |
+|   |   +-- /css
+|   |   +-- /js
+|   |   +-- /img
+|   |
+|   +-- /templates
+|   |   |
+|   |   +-- base.html
+|   |   +-- gamepicker.html
+|   |   +-- introduction.html
+|   |
+|   +-- manage.py
+|   +-- requirements.txt
+|
++-- /tests
+|   |
+|   +-- /games
+|   |   |
+|   |   +-- test_guessgame.py
+|   |   +-- test_memorygame.py
+|   |
+|   +-- /scores
+|   |   |
+|   |   +-- test_scores.py
+|   |   +-- test_database.py
+|   |
+|   +-- test_end_to_end.py
+|
++-- /docker
+|   |
+|   +-- Dockerfile
+|   +-- docker-compose.yml
+|
++-- /helm
+|   |
+|   +-- Chart.yaml
+|   +-- values.yaml
+|   +-- templates/
+|       |
+|       +-- deployment.yaml
+|       +-- service.yaml
+|
++-- README.md
