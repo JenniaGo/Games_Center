@@ -1,9 +1,10 @@
-from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.dialects.mysql import INTEGER
+from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
 class MemoryGame(db.Model):
+    __tablename__ = 'memorygame'
     id = db.Column(INTEGER(unsigned=True), primary_key=True, autoincrement=True)
     name = db.Column(db.String(255))
     score = db.Column(db.Integer)
@@ -13,6 +14,7 @@ class MemoryGame(db.Model):
         self.score = score
 
 class Score(db.Model):
+    __tablename__ = 'scores'
     id = db.Column(INTEGER(unsigned=True), primary_key=True, autoincrement=True)
     user_id = db.Column(db.String(255))
     score = db.Column(db.Integer)
@@ -23,3 +25,4 @@ class Score(db.Model):
 
     def update(self):
         db.session.commit()
+``
