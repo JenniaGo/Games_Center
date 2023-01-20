@@ -25,3 +25,4 @@ def memorygame():
     secret_cards = random.sample(range(1,9), 4)
     resp = make_response(render_template('memorygame.html', form=form, cards=range(1,9)))
     resp.set_cookie('secret_cards', str(secret_cards))
+    return resp
